@@ -96,9 +96,57 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
+html, body {
+    background: #293540;
+}
+em {
+    font-style: normal;
+}
+a:hover {
+    text-decoration: none;
+}
+.card-columns h4 {
+    border-bottom: 3px solid #fc561f;
+    text-align: center;
+}
+.card {
+    margin: 80px 0 20px 0;
+    background: #fff;
+}
+.card-text {
+    height: 150px;
+    overflow: hidden;
+}
+.navbar {
+    border-bottom: 2px solid #fc561f;
+}
+.btn a, .btn{
+    color: #fc561f;
+}
+.btn:hover, .btn a:hover {
+    color: #e1ebf5;
+}
+.bordered {
+    border-radius: 0 0 40px 40px;
+}
+.pricingBoxing, .pricingFitness, .pricingJogging {
+    color: #7cbce2;
+}
+.hidden-mobile {
+    display: none;
+}
+@media (min-width: 568px) {
+    .hidden-mobile {
+        display: block;
+    }
+    .hidden-desktop {
+        display: none;
+    }
+    table {
+        margin: 40px 0 0 0 ;
+    }
+    
+}
 
 
 
