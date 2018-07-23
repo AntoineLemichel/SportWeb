@@ -100,7 +100,7 @@
             <option value="70">70 h</option>
           </select>
           <div>
-            <input type="number" min="1" max="5" class="amountBoxing" value="1" onclick="displayValsBoxing();">
+            <input type="number" min="1" max="5" class="amountBoxing" value="1" pattern="[0-9]*" onclick="displayValsBoxing();" on-touch="displayValsBoxing();">
             <span>Amount</span>
             <p>Total
               <span class="pricingBoxing">0</span>$</p>
