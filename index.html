@@ -14,7 +14,7 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theh1iuMD+pLhbf6JI0jIMfYcK3yZ"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theh2iuMD+pLhbf6JI0jIMfYcK3yZ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -37,15 +37,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-right">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Pricing
+            <a class="nav-link" href="pricing.html">Pricing
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="aboutme.html">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
@@ -60,7 +60,7 @@
     </nav>
   </header>
   <div class="container container-index">
-    <div id="carouselId" class="carousel slide hidden-mobile" data-ride="carousel">
+    <div id="carouselId" class="carousel slide d-none d-md-block" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselId" data-slide-to="0" class="active"></li>
         <li data-target="#carouselId" data-slide-to="1"></li>
@@ -70,21 +70,21 @@
         <div class="carousel-item active">
           <img src="img/jogging-1280.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Jogging</h3>
+            <h1>Jogging</h1>
             <p>Run Forest, run Forest</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/boxer-1280.jpg" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Boxing</h3>
+            <h2>Boxing</h2>
             <p>Rocky is coming</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/fitness-1280.jpg" alt="Third slide">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Fitness</h3>
+            <h2>Fitness</h2>
             <p>The Rock is now you !</p>
           </div>
         </div>
@@ -100,10 +100,17 @@
     </div>
 
 
+
+
+
+
+
+
+
     <div class="card-columns">
       <div class="card card-boxing">
         <div class="card-body">
-          <h1 class="card-title">Boxing</h1>
+          <h2 class="card-title">Boxing</h2>
           <img class="card-img-top" src="img/boxer-640.jpg" srcset="img/boxer-640.jpg 640w, img/boxer-1280.jpg 1280w, img/boxer-1920.jpg 1920w"
             sizes="300px" alt="Boxer picture">
           <p class="card-text">Boxing lessons are becoming an ever more popular fitness choice. This fast-paced yet methodical exercise touches
@@ -114,8 +121,8 @@
             That way if tournaments and competitions are something you would like to pursue, you will be at the top of your
             game!
           </p>
-          <a href="boxing-mobile.html" class="btn btn-dark col-12 hidden-desktop">See more</a>
-          <button class="btn btn-dark col-12 hidden-mobile btn-boxing" type="button" data-toggle="collapse" data-target="#seeMoreBoxing"
+          <a href="boxing-mobile.html" class="btn btn-dark col-12 d-md-none">See more</a>
+          <button class="btn btn-dark col-12 d-none d-md-block btn-boxing" type="button" data-toggle="collapse" data-target="#seeMoreBoxing"
             aria-expanded="false" aria-controls="seeMoreBoxing">
             See more
           </button>
@@ -161,15 +168,28 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="card card-fitness">
         <div class="card-body">
-          <h1 class="card-title">Fitness</h1>
+          <h2 class="card-title">Fitness</h2>
           <img class="card-img-top" src="img/fitness-640.jpg" srcset="img/fitness-640.jpg 640w, img/fitness-1280.jpg 1280w, img/fitness-1920.jpg 1920w"
             sizes="300px" alt="Fitness picture">
           <p class="card-text">Want to lose weight ? Increase your muscle mass? Improve your fitness? Or do you especially need someone to motivate
             you? Regardless of your personal goals, a personal trainer can help you reach them. </p>
-          <a href="" class="btn btn-dark col-12 hidden-desktop">See more</a>
-          <button class="btn btn-dark col-12 hidden-mobile btn-fitness" type="button" data-toggle="collapse" data-target="#seeMoreFitness"
+          <a href="fitness-mobile.html" class="btn btn-dark col-12 d-md-none">See more</a>
+          <button class="btn btn-dark col-12 d-none d-md-block btn-fitness" type="button" data-toggle="collapse" data-target="#seeMoreFitness"
             aria-expanded="false" aria-controls="seeMoreFitness">
             See more
           </button>
@@ -215,16 +235,34 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="card card-jogging">
         <div class="card-body">
-          <h1 class="card-title">Jogging</h1>
+          <h2 class="card-title">Jogging</h2>
           <img class="card-img-top" src="img/jogging-640.jpg" srcset="img/jogging-640.jpg 640w, img/jogging-1280.jpg 1280w, img/jogging-1920.jpg 1920w"
             sizes="300px" alt="Jogging picture">
           <p class="card-text">Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical
             fitness with less stress on the body than from faster running, or to maintain a steady speed for longer periods
             of time. Performed over long distances, it is a form of aerobic endurance training.</p>
-          <a href="" class="btn btn-dark col-12 hidden-desktop">See more</a>
-          <button class="btn btn-dark col-12 hidden-mobile btn-jogging" type="button" data-toggle="collapse" data-target="#seeMoreJogging"
+          <a href="jogging-mobile.html" class="btn btn-dark col-12 d-md-none">See more</a>
+          <button class="btn btn-dark col-12 d-none d-sm-block btn-jogging" type="button" data-toggle="collapse" data-target="#seeMoreJogging"
             aria-expanded="false" aria-controls="seeMoreJogging">
             See more
           </button>
@@ -271,6 +309,18 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
       <ul class="list-unstyled">
         <li class="list-inline-item">

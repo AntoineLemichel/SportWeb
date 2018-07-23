@@ -37,15 +37,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-right">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Pricing
+            <a class="nav-link" href="pricing.html">Pricing
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="aboutme.html">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
@@ -59,7 +59,7 @@
       </div>
     </nav>
   </header>
-  <div class="container container-fitness">
+  <div class="container container-jogging-mobile container-mobile">
     <div class="card card-fitness">
       <div class="card-body">
         <img class="card-img-top" src="img/jogging-640.jpg" srcset="img/jogging-640.jpg 640w, img/jogging-1280.jpg 1280w, img/jogging-1920.jpg 1920w"
@@ -98,7 +98,7 @@
               <option value="70">70 h</option>
             </select>
             <div>
-              <input type="number" min="1" max="5" class="amountJogging" value="1" onchange="displayValsJogging();">
+              <input type="text" pattern="[0-9]*" class="amountJogging" value="1" onchange="displayValsJogging();">
               <span>Amount</span>
               <p>Total
                 <span class="pricingJogging">0</span>$</p>
