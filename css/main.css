@@ -127,11 +127,14 @@ a:hover {
 .card-mobile {
     height: auto;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
     border-bottom: 2px solid #fc561f;
 }
-input[type="text"]{
+.container-mobile input[type="text"]{
     max-width: 50px;
+}
+.container-contact {
+    margin: 80px 0 20px 0;
 }
 .navbar {
     border-bottom: 2px solid #fc561f;
@@ -162,24 +165,6 @@ input[type="text"]{
     font-size: 2rem;
 }
 
-.hidden-mobile {
-    display: none;
-}
-
-@media (min-width: 992px) {
-    .hidden-mobile {
-        display: block;
-    }
-    .hidden-desktop {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .hidden-mobile {
-        display: none;
-    }
-}
 
 /* ==========================================================================
    Helper classes
