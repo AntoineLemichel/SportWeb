@@ -42,7 +42,7 @@ function displayValsBoxing() {
     var amountBoxing = $(".amountBoxing").val();
     var priceBoxing = $(".tableBoxing").find('td:eq(0)').html();
     var priceBoxingInt = parseInt(priceBoxing);
-    $(".pricingBoxing").html(boxingHours * amountBoxing * priceBoxingInt);
+    $(".pricingBoxing").html((boxingHours * priceBoxingInt) * amountBoxing);
 }
 
 function displayValsFitness() {
@@ -50,7 +50,7 @@ function displayValsFitness() {
     var amountFitness = $(".amountFitness").val();
     var priceFitness = $(".tableFitness").find('td:eq(0)').html();
     var priceFitnessInt = parseInt(priceFitness);
-    $(".pricingFitness").html(fitnessHours * amountFitness * priceFitnessInt);
+    $(".pricingFitness").html((fitnessHours * priceFitnessInt) * amountFitness);
 }
 
 function displayValsJogging() {
@@ -58,7 +58,7 @@ function displayValsJogging() {
     var amountJogging = $(".amountJogging").val();
     var priceJogging = $(".tableJogging").find('td:eq(0)').html();
     var priceJoggingInt = parseInt(priceJogging);
-    $(".pricingJogging").html(joggingHours * amountJogging * priceJoggingInt);
+    $(".pricingJogging").html((joggingHours * priceJoggingInt) * amountJogging);
 }
 $(".pricingBoxing").change(displayValsBoxing);
 $(".pricingFitness").change(displayValsFitness);
@@ -66,3 +66,14 @@ $(".pricingJogging").change(displayValsJogging);
 displayValsBoxing();
 displayValsFitness();
 displayValsJogging();
+
+
+function addCart(){
+    var itemCount = 0;
+    $('.add-Item').click(function(){
+        itemCount++;
+        $('.add-cart').html(itemCount);
+    });
+}
+addCart();
+$("form").submit(function() { return false; });
