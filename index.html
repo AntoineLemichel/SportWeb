@@ -14,6 +14,8 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theh1iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -46,8 +48,11 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <ul class="nav justify-content-end text-right">
-          <li class="nav-item text-right">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <i class="fas fa-shopping-bag shopping-bag hidden-mobile mr-4"></i>
+          </li>
+          <li class="nav-item text-right col-">
             <a href="#" class="nav-link btn btn-dark">Sign Up</a>
           </li>
         </ul>
@@ -98,25 +103,24 @@
     <div class="card-columns">
       <div class="card card-boxing">
         <div class="card-body">
-          <h4 class="card-title">Boxing</h4>
+          <h1 class="card-title">Boxing</h1>
           <img class="card-img-top" src="img/boxer-640.jpg" srcset="img/boxer-640.jpg 640w, img/boxer-1280.jpg 1280w, img/boxer-1920.jpg 1920w"
             sizes="300px" alt="Boxer picture">
           <p class="card-text">Boxing lessons are becoming an ever more popular fitness choice. This fast-paced yet methodical exercise touches
-            on elements of cardio, endurance and strength training to create a comprehensive workout...
-            <em class="hidden-mobile">Some popular motivations for taking boxing lessons are increasing endurance, strengthening punching power, and
-              getting fit. The intensity of a boxing workout can also help relieve stress. Do you want to pursue boxing as
-              a career? Then boxing lessons are yet again a good choice. A boxing instructor can teach you how to hone and
-              improve your boxing techniques. That way if tournaments and competitions are something you would like to pursue,
-              you will be at the top of your game!
-            </em>
+            on elements of cardio, endurance and strength training to create a comprehensive workout... Some popular motivations
+            for taking boxing lessons are increasing endurance, strengthening punching power, and getting fit. The intensity
+            of a boxing workout can also help relieve stress. Do you want to pursue boxing as a career? Then boxing lessons
+            are yet again a good choice. A boxing instructor can teach you how to hone and improve your boxing techniques.
+            That way if tournaments and competitions are something you would like to pursue, you will be at the top of your
+            game!
           </p>
-          <a href="" class="btn btn-dark col-12 hidden-desktop">See more</a>
+          <a href="boxing-mobile.html" class="btn btn-dark col-12 hidden-desktop">See more</a>
           <button class="btn btn-dark col-12 hidden-mobile btn-boxing" type="button" data-toggle="collapse" data-target="#seeMoreBoxing"
             aria-expanded="false" aria-controls="seeMoreBoxing">
             See more
           </button>
           <div class="collapse tableBoxing" id="seeMoreBoxing">
-            <table class="table table-bordered col-12">
+            <table class="table table-bordered col-12 mt-3">
               <thead class="thead-default">
                 <tr>
                   <th>Price</th>
@@ -159,7 +163,7 @@
       </div>
       <div class="card card-fitness">
         <div class="card-body">
-          <h4 class="card-title">Fitness</h4>
+          <h1 class="card-title">Fitness</h1>
           <img class="card-img-top" src="img/fitness-640.jpg" srcset="img/fitness-640.jpg 640w, img/fitness-1280.jpg 1280w, img/fitness-1920.jpg 1920w"
             sizes="300px" alt="Fitness picture">
           <p class="card-text">Want to lose weight ? Increase your muscle mass? Improve your fitness? Or do you especially need someone to motivate
@@ -170,7 +174,7 @@
             See more
           </button>
           <div class="collapse tableFitness" id="seeMoreFitness">
-            <table class="table table-bordered col-12">
+            <table class="table table-bordered col-12 mt-3">
               <thead class="thead-default">
                 <tr>
                   <th>Price</th>
@@ -213,17 +217,19 @@
       </div>
       <div class="card card-jogging">
         <div class="card-body">
-          <h4 class="card-title">Jogging</h4>
+          <h1 class="card-title">Jogging</h1>
           <img class="card-img-top" src="img/jogging-640.jpg" srcset="img/jogging-640.jpg 640w, img/jogging-1280.jpg 1280w, img/jogging-1920.jpg 1920w"
             sizes="300px" alt="Jogging picture">
-          <p class="card-text">Text</p>
+          <p class="card-text">Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical
+            fitness with less stress on the body than from faster running, or to maintain a steady speed for longer periods
+            of time. Performed over long distances, it is a form of aerobic endurance training.</p>
           <a href="" class="btn btn-dark col-12 hidden-desktop">See more</a>
           <button class="btn btn-dark col-12 hidden-mobile btn-jogging" type="button" data-toggle="collapse" data-target="#seeMoreJogging"
             aria-expanded="false" aria-controls="seeMoreJogging">
             See more
           </button>
           <div class="collapse tableJogging" id="seeMoreJogging">
-            <table class="table table-bordered col-12">
+            <table class="table table-bordered col-12 mt-3">
               <thead class="thead-default">
                 <tr>
                   <th>Price</th>
