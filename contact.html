@@ -50,7 +50,9 @@
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
-                        <i class="fas fa-shopping-bag shopping-bag d-none d-md-block mr-4"><span class="badge badge-danger add-cart">0</span></i>
+                        <i class="fas fa-shopping-bag shopping-bag d-none d-md-block mr-4">
+                            <span class="badge badge-dark add-cart">0</span>
+                        </i>
                     </li>
                     <li class="nav-item text-right col-">
                         <a href="#" class="nav-link btn btn-dark">Sign Up</a>
@@ -68,21 +70,21 @@
 
 
 
-    <div class="container container-contact">
+    <div class="container container-contact d-block mx-auto">
         <div class="row">
             <form>
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-12 col-sm-">
                     <input type="text" class="form-control" placeholder="Name *" required>
                     <input type="email" class="form-control mt-2" placeholder="Email *" required>
                     <textarea cols="30" class="form-control mt-2" rows="10" placeholder="Message *" required></textarea>
                     <input type="submit" value="Send" class="btn btn-dark mt-2 col-12">
                 </div>
             </form>
-            <div class="calendar row mt-2 embed-responsive embed-responsive-16by9 col mx-auto">
+            <div class="calendar row mt-2 embed-responsive embed-responsive-16by9 col-md-5 col-sm-10 mr-4 ml-4">
                 <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=sn3qr8iq2qe900l4pcbq7nmsus%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FParis"
                     style="border-width:0; height: 300px;"></iframe>
             </div>
-            <div class="map mt-2 col-md-12 embed-responsive embed-responsive-16by9 justify-content-center ml-5 mr-5 mb-3">
+            <div class="map mt-2 col-md-12 embed-responsive embed-responsive-16by9 justify-content-center ml-4 mr-4 mb-3">
                 <iframe class="embed-responsive-item" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.61776733398439%2C40.3873508718188%2C-73.34060668945314%2C41.005811774870594&amp;layer=mapnik&amp;marker=40.697299008636755%2C-73.97918701171875"></iframe>
             </div>
 
@@ -124,8 +126,6 @@
     </div>
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
     </script>
