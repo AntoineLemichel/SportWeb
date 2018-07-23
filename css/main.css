@@ -96,70 +96,88 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html, body {
+
+html,
+body {
     background: #293540;
 }
+
 em {
     font-style: normal;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 .card-columns h4 {
     border-bottom: 3px solid #fc561f;
     text-align: center;
 }
+
 .card {
     margin: 80px 0 20px 0;
     background: #fff;
 }
+
 .card-text {
     height: 150px;
     overflow: hidden;
 }
+.card-mobile {
+    height: auto;
+}
+h1 {
+    border-bottom: 2px solid #fc561f;
+}
+
 .navbar {
     border-bottom: 2px solid #fc561f;
 }
-.btn a, .btn{
-    color: #fc561f;
+
+.btn a,
+.btn {
+    color: #fc561f !important;
 }
-.btn:hover, .btn a:hover {
-    color: #e1ebf5;
+
+.btn:hover,
+.btn a:hover {
+    color: #e1ebf5 !important;
 }
+
 .bordered {
     border-radius: 0 0 40px 40px;
 }
-.pricingBoxing, .pricingFitness, .pricingJogging {
+
+.pricingBoxing,
+.pricingFitness,
+.pricingJogging {
     color: #7cbce2;
 }
+
+.shopping-bag {
+    color: #293540;
+    font-size: 2rem;
+}
+
 .hidden-mobile {
     display: none;
 }
-@media (min-width: 568px) {
+
+@media (min-width: 992px) {
     .hidden-mobile {
         display: block;
     }
     .hidden-desktop {
         display: none;
     }
-    table {
-        margin: 40px 0 0 0 ;
-    }
-    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
 
 /* ==========================================================================
    Helper classes
@@ -191,7 +209,8 @@ a:hover {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -233,8 +252,10 @@ a:hover {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -252,9 +273,9 @@ a:hover {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -269,35 +290,30 @@ a:hover {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -306,28 +322,23 @@ a:hover {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
