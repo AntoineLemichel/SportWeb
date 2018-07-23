@@ -130,7 +130,9 @@ a:hover {
 h1 {
     border-bottom: 2px solid #fc561f;
 }
-
+input[type="text"]{
+    max-width: 50px;
+}
 .navbar {
     border-bottom: 2px solid #fc561f;
 }
