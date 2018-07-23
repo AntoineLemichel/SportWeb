@@ -62,12 +62,13 @@
   <div class="container container-fitness">
     <div class="card card-fitness">
       <div class="card-body">
-        <img class="card-img-top" src="img/fitness-640.jpg" srcset="img/fitness-640.jpg 640w, img/fitness-1280.jpg 1280w, img/fitness-1920.jpg 1920w"
+        <img class="card-img-top" src="img/jogging-640.jpg" srcset="img/jogging-640.jpg 640w, img/jogging-1280.jpg 1280w, img/jogging-1920.jpg 1920w"
           sizes="300px" alt="Fitness picture">
-        <h1 class="card-title">Fitness</h1>
-        <p class="card-text">Want to lose weight ? Increase your muscle mass? Improve your fitness? Or do you especially need someone to motivate
-          you? Regardless of your personal goals, a personal trainer can help you reach them. </p>
-        <table class="table table-bordered col-12 mt-3 tableFitness">
+        <h1 class="card-title">Jogging</h1>
+        <p class="card-text">Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical
+          fitness with less stress on the body than from faster running, or to maintain a steady speed for longer periods
+          of time. Performed over long distances, it is a form of aerobic endurance training.</p>
+        <table class="table table-bordered col-12 mt-3 tableJogging">
           <thead class="thead-default">
             <tr>
               <th>Price</th>
@@ -76,31 +77,31 @@
           </thead>
           <tbody>
             <tr>
-              <td>19 $</td>
-              <td>2 h</td>
-            </tr>
-            <tr>
-              <td>17 $</td>
-              <td>8 h</td>
-            </tr>
-            <tr>
-              <td>15 $</td>
+              <td>27 $</td>
               <td>15 h</td>
+            </tr>
+            <tr>
+              <td>24 $</td>
+              <td>40 h</td>
+            </tr>
+            <tr>
+              <td>19 $</td>
+              <td>100 h</td>
             </tr>
           </tbody>
         </table>
         <div class="form-row col-12 justify-content-center">
           <form>
-            <select class="form-control form-control-sm form-group selectFitness" onchange="displayValsFitness(); ">
+            <select class="form-control form-control-sm form-group selectJogging" onchange="displayValsJogging();">
               <option value="10" selected>10 h</option>
               <option value="35">35 h</option>
               <option value="70">70 h</option>
             </select>
             <div>
-              <input type="text" class="amountFitness" value="1" pattern="[0-9]*" onchange="displayValsFitness();">
+              <input type="number" min="1" max="5" class="amountJogging" value="1" onchange="displayValsJogging();">
               <span>Amount</span>
               <p>Total
-                <span class="pricingFitness">0</span>$</p>
+                <span class="pricingJogging">0</span>$</p>
             </div>
             <button type="submit" class="btn btn-dark col-12">Add Cart</button>
           </form>
@@ -131,7 +132,6 @@
         </li>
       </ul>
     </footer>
-
   </div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
